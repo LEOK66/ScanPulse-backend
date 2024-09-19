@@ -1,0 +1,4 @@
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-19T17:11:20.019Z"}
+{"level":"info","message":"Received vote for poll d4bba4cf-754d-44e2-bd57-7b217d4a6eb2: test_voter_123 - 😊","timestamp":"2024-09-19T17:11:23.871Z"}
+{"level":"info","message":"Vote recorded successfully for poll d4bba4cf-754d-44e2-bd57-7b217d4a6eb2","timestamp":"2024-09-19T17:11:23.900Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-19T17:12:49.624Z"}

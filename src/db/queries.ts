@@ -1,19 +1,12 @@
 import prisma from "./connection";
 
-export async function createPoll(question: string, qrCodeUrl: string) {
-  return prisma.poll.create({
-    data: { question, qrCodeUrl },
-  });
-}
-
 export async function getPoll(id: string) {
   return prisma.poll.findUnique({
     where: { id },
-    include: { votes: true },
   });
 }
 
-export async function createVote(
+export async function updateVote(
   pollId: string,
   voterId: string,
   emoji: string
@@ -28,9 +21,20 @@ export async function createVote(
 }
 
 export async function getPollResults(pollId: string) {
-  return prisma.vote.groupBy({
+  const votes = await prisma.vote.groupBy({
     by: ["emoji"],
     where: { pollId },
     _count: true,
+  });
+
+  return votes.reduce((acc, vote) => {
+    acc[vote.emoji] = vote._count;
+    return acc;
+  }, {} as Record<string, number>);
+}
+
+export async function createPoll(question: string, qrCodeUrl: string) {
+  return prisma.poll.create({
+    data: { question, qrCodeUrl },
   });
 }
