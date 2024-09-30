@@ -13,6 +13,6 @@
     "sourceMap": true,
     "types": ["node", "express", "jest"]
   },
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "prisma/**/*"],
   "exclude": ["node_modules"]
 }
