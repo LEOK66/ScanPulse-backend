@@ -21,4 +21,7 @@ CREATE TABLE "Vote" (
 CREATE UNIQUE INDEX "Vote_pollId_voterId_key" ON "Vote"("pollId", "voterId");
 
 -- AddForeignKey
-ALTER TABLE "Vote" ADD CONSTRAINT "Vote_pollId_fkey" FOREIGN KEY ("pollId") REFERENCES "Poll"("id") ON DELETE RESTRICT ON UPDATE CASCADE;
+ALTER TABLE "Vote" ADD CONSTRAINT "Vote_pollId_fkey" FOREIGN KEY ("pollId") 
+REFERENCES "Poll"("id") 
+ON DELETE CASCADE -- or you can use SET NULL here if that's preferred
+ON UPDATE CASCADE;

@@ -2,3 +2,955 @@
 {"level":"info","message":"Received vote for poll d4bba4cf-754d-44e2-bd57-7b217d4a6eb2: test_voter_123 - 😊","timestamp":"2024-09-19T17:11:23.871Z"}
 {"level":"info","message":"Vote recorded successfully for poll d4bba4cf-754d-44e2-bd57-7b217d4a6eb2","timestamp":"2024-09-19T17:11:23.900Z"}
 {"level":"info","message":"Shutting down server","timestamp":"2024-09-19T17:12:49.624Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T01:33:52.689Z"}
+{"level":"info","message":"Creating new poll for user 99ac67ee-9df5-4cc2-a0b5-f2bf214e6be2","timestamp":"2024-09-22T01:37:29.948Z"}
+{"level":"info","message":"Poll created successfully: 871d61a1-1272-4df6-816f-2be6755585fd","timestamp":"2024-09-22T01:37:29.972Z"}
+{"level":"info","message":"Fetching polls for user 99ac67ee-9df5-4cc2-a0b5-f2bf214e6be2","timestamp":"2024-09-22T01:38:29.817Z"}
+{"level":"info","message":"Fetching polls for user 99ac67ee-9df5-4cc2-a0b5-f2bf214e6be2","timestamp":"2024-09-22T01:39:21.327Z"}
+{"level":"info","message":"Fetching polls for user 99ac67ee-9df5-4cc2-a0b5-f2bf214e6be2","timestamp":"2024-09-22T01:39:22.389Z"}
+{"level":"info","message":"Fetching poll with id: 871d61a1-1272-4df6-816f-2be6755585fd","timestamp":"2024-09-22T01:40:19.012Z"}
+{"level":"info","message":"Received vote for poll 871d61a1-1272-4df6-816f-2be6755585fd: user123 - 👍","timestamp":"2024-09-22T01:41:15.980Z"}
+{"level":"info","message":"Vote recorded successfully for poll 871d61a1-1272-4df6-816f-2be6755585fd","timestamp":"2024-09-22T01:41:15.998Z"}
+{"level":"info","message":"Received vote for poll 871d61a1-1272-4df6-816f-2be6755585fd: user123 - 👍","timestamp":"2024-09-22T01:42:35.320Z"}
+{"level":"info","message":"Vote recorded successfully for poll 871d61a1-1272-4df6-816f-2be6755585fd","timestamp":"2024-09-22T01:42:35.324Z"}
+{"level":"info","message":"Received vote for poll 871d61a1-1272-4df6-816f-2be6755585fd: user123 - 👍","timestamp":"2024-09-22T01:42:39.276Z"}
+{"level":"info","message":"Vote recorded successfully for poll 871d61a1-1272-4df6-816f-2be6755585fd","timestamp":"2024-09-22T01:42:39.281Z"}
+{"level":"info","message":"Received vote for poll 871d61a1-1272-4df6-816f-2be6755585fd: user123 - 👍","timestamp":"2024-09-22T01:42:48.565Z"}
+{"level":"info","message":"Vote recorded successfully for poll 871d61a1-1272-4df6-816f-2be6755585fd","timestamp":"2024-09-22T01:42:48.569Z"}
+{"level":"info","message":"Received vote for poll 871d61a1-1272-4df6-816f-2be6755585fd: user123 - 👍","timestamp":"2024-09-22T01:42:49.734Z"}
+{"level":"info","message":"Vote recorded successfully for poll 871d61a1-1272-4df6-816f-2be6755585fd","timestamp":"2024-09-22T01:42:49.738Z"}
+{"level":"info","message":"Received vote for poll 871d61a1-1272-4df6-816f-2be6755585fd: user123 - 👍","timestamp":"2024-09-22T01:42:50.380Z"}
+{"level":"info","message":"Vote recorded successfully for poll 871d61a1-1272-4df6-816f-2be6755585fd","timestamp":"2024-09-22T01:42:50.384Z"}
+{"level":"info","message":"Fetching poll with id: 871d61a1-1272-4df6-816f-2be6755585fd","timestamp":"2024-09-22T01:44:00.304Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T06:17:55.291Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T06:18:22.403Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T06:18:53.767Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T06:24:40.488Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T06:28:27.660Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T06:30:57.685Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T06:32:27.010Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-22T06:33:38.085Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T06:45:04.415Z"}
+{"level":"info","message":"Creating new poll for user d23ece54-8e06-4887-8a9e-d9b0d5b7fa80","timestamp":"2024-09-22T06:50:11.441Z"}
+{"level":"info","message":"Poll created successfully: a3ba936d-3501-492f-af95-bc3250000e71","timestamp":"2024-09-22T06:50:11.452Z"}
+{"level":"info","message":"Received vote for poll a3ba936d-3501-492f-af95-bc3250000e71: voter1 - 😊","timestamp":"2024-09-22T06:51:28.285Z"}
+{"clientVersion":"5.19.1","level":"error","message":"Error in vote: \nInvalid `prisma.vote.upsert()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:18:22\n\n  15   voterId: string,\n  16   emoji: AllowedEmoji\n  17 ) {\n→ 18   return prisma.vote.upsert({\n         where: {\n           pollId_voterId: {\n             pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n             voterId: \"voter1\"\n           }\n         },\n         update: {\n           emoji: \"😊\"\n         },\n         create: {\n           pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n           voterId: \"voter1\",\n           emoji: \"😊\"\n                  ~~~~\n         }\n       })\n\nInvalid value for argument `emoji`. Expected Emoji.","name":"PrismaClientValidationError","stack":"PrismaClientValidationError: \nInvalid `prisma.vote.upsert()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:18:22\n\n  15   voterId: string,\n  16   emoji: AllowedEmoji\n  17 ) {\n→ 18   return prisma.vote.upsert({\n         where: {\n           pollId_voterId: {\n             pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n             voterId: \"voter1\"\n           }\n         },\n         update: {\n           emoji: \"😊\"\n         },\n         create: {\n           pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n           voterId: \"voter1\",\n           emoji: \"😊\"\n                  ~~~~\n         }\n       })\n\nInvalid value for argument `emoji`. Expected Emoji.\n    at In (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:114:7526)\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7396)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at vote (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:44:5)","timestamp":"2024-09-22T06:51:28.297Z"}
+{"level":"info","message":"Received vote for poll a3ba936d-3501-492f-af95-bc3250000e71: voter1 - 😊","timestamp":"2024-09-22T06:51:34.221Z"}
+{"clientVersion":"5.19.1","level":"error","message":"Error in vote: \nInvalid `prisma.vote.upsert()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:18:22\n\n  15   voterId: string,\n  16   emoji: AllowedEmoji\n  17 ) {\n→ 18   return prisma.vote.upsert({\n         where: {\n           pollId_voterId: {\n             pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n             voterId: \"voter1\"\n           }\n         },\n         update: {\n           emoji: \"😊\"\n         },\n         create: {\n           pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n           voterId: \"voter1\",\n           emoji: \"😊\"\n                  ~~~~\n         }\n       })\n\nInvalid value for argument `emoji`. Expected Emoji.","name":"PrismaClientValidationError","stack":"PrismaClientValidationError: \nInvalid `prisma.vote.upsert()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:18:22\n\n  15   voterId: string,\n  16   emoji: AllowedEmoji\n  17 ) {\n→ 18   return prisma.vote.upsert({\n         where: {\n           pollId_voterId: {\n             pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n             voterId: \"voter1\"\n           }\n         },\n         update: {\n           emoji: \"😊\"\n         },\n         create: {\n           pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n           voterId: \"voter1\",\n           emoji: \"😊\"\n                  ~~~~\n         }\n       })\n\nInvalid value for argument `emoji`. Expected Emoji.\n    at In (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:114:7526)\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7396)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at vote (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:44:5)","timestamp":"2024-09-22T06:51:34.225Z"}
+{"level":"info","message":"Received vote for poll a3ba936d-3501-492f-af95-bc3250000e71: voter1 - 😊","timestamp":"2024-09-22T06:52:02.176Z"}
+{"clientVersion":"5.19.1","level":"error","message":"Error in vote: \nInvalid `prisma.vote.upsert()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:18:22\n\n  15   voterId: string,\n  16   emoji: AllowedEmoji\n  17 ) {\n→ 18   return prisma.vote.upsert({\n         where: {\n           pollId_voterId: {\n             pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n             voterId: \"voter1\"\n           }\n         },\n         update: {\n           emoji: \"😊\"\n         },\n         create: {\n           pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n           voterId: \"voter1\",\n           emoji: \"😊\"\n                  ~~~~\n         }\n       })\n\nInvalid value for argument `emoji`. Expected Emoji.","name":"PrismaClientValidationError","stack":"PrismaClientValidationError: \nInvalid `prisma.vote.upsert()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:18:22\n\n  15   voterId: string,\n  16   emoji: AllowedEmoji\n  17 ) {\n→ 18   return prisma.vote.upsert({\n         where: {\n           pollId_voterId: {\n             pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n             voterId: \"voter1\"\n           }\n         },\n         update: {\n           emoji: \"😊\"\n         },\n         create: {\n           pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n           voterId: \"voter1\",\n           emoji: \"😊\"\n                  ~~~~\n         }\n       })\n\nInvalid value for argument `emoji`. Expected Emoji.\n    at In (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:114:7526)\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7396)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at vote (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:44:5)","timestamp":"2024-09-22T06:52:02.181Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-22T07:01:10.211Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T07:01:38.911Z"}
+{"level":"info","message":"Received vote for poll a3ba936d-3501-492f-af95-bc3250000e71: voter1 - 😊","timestamp":"2024-09-22T07:01:43.464Z"}
+{"clientVersion":"5.19.1","level":"error","message":"Error in vote: \nInvalid `prisma.vote.upsert()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:18:22\n\n  15   voterId: string,\n  16   emoji: AllowedEmoji\n  17 ) {\n→ 18   return prisma.vote.upsert({\n         where: {\n           pollId_voterId: {\n             pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n             voterId: \"voter1\"\n           }\n         },\n         update: {\n           emoji: \"😊\"\n         },\n         create: {\n           pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n           voterId: \"voter1\",\n           emoji: \"😊\"\n                  ~~~~\n         }\n       })\n\nInvalid value for argument `emoji`. Expected Emoji.","name":"PrismaClientValidationError","stack":"PrismaClientValidationError: \nInvalid `prisma.vote.upsert()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:18:22\n\n  15   voterId: string,\n  16   emoji: AllowedEmoji\n  17 ) {\n→ 18   return prisma.vote.upsert({\n         where: {\n           pollId_voterId: {\n             pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n             voterId: \"voter1\"\n           }\n         },\n         update: {\n           emoji: \"😊\"\n         },\n         create: {\n           pollId: \"a3ba936d-3501-492f-af95-bc3250000e71\",\n           voterId: \"voter1\",\n           emoji: \"😊\"\n                  ~~~~\n         }\n       })\n\nInvalid value for argument `emoji`. Expected Emoji.\n    at In (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:114:7526)\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7396)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at vote (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:44:5)","timestamp":"2024-09-22T07:01:43.482Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T07:02:41.653Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T07:03:41.014Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T07:04:57.681Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T07:05:08.772Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T07:05:46.829Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T07:05:57.389Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T07:06:18.190Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T07:10:08.226Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-22T07:10:15.907Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-22T07:10:30.770Z"}
+{"level":"info","message":"Received vote for poll a3ba936d-3501-492f-af95-bc3250000e71: voter1 - 😊","timestamp":"2024-09-22T07:10:33.476Z"}
+{"level":"info","message":"Vote recorded successfully for poll a3ba936d-3501-492f-af95-bc3250000e71","timestamp":"2024-09-22T07:10:33.496Z"}
+{"level":"info","message":"Received vote for poll a3ba936d-3501-492f-af95-bc3250000e71: voter2 - 😐","timestamp":"2024-09-22T07:11:00.090Z"}
+{"level":"info","message":"Vote recorded successfully for poll a3ba936d-3501-492f-af95-bc3250000e71","timestamp":"2024-09-22T07:11:00.096Z"}
+{"level":"info","message":"Received vote for poll a3ba936d-3501-492f-af95-bc3250000e71: voter3 - 😐","timestamp":"2024-09-22T07:11:09.773Z"}
+{"level":"info","message":"Vote recorded successfully for poll a3ba936d-3501-492f-af95-bc3250000e71","timestamp":"2024-09-22T07:11:09.778Z"}
+{"level":"info","message":"Received vote for poll a3ba936d-3501-492f-af95-bc3250000e71: voter4 - 😢","timestamp":"2024-09-22T07:11:30.016Z"}
+{"level":"info","message":"Vote recorded successfully for poll a3ba936d-3501-492f-af95-bc3250000e71","timestamp":"2024-09-22T07:11:30.021Z"}
+{"level":"info","message":"Fetching poll with id: a3ba936d-3501-492f-af95-bc3250000e71","timestamp":"2024-09-22T07:14:06.565Z"}
+{"level":"info","message":"Received vote for poll a3ba936d-3501-492f-af95-bc3250000e71: voter5 - 😊","timestamp":"2024-09-22T07:14:40.292Z"}
+{"level":"info","message":"Vote recorded successfully for poll a3ba936d-3501-492f-af95-bc3250000e71","timestamp":"2024-09-22T07:14:40.297Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-23T08:01:17.835Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-23T14:06:58.738Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-23T14:23:06.784Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-23T14:26:59.653Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:28:03.124Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:28:03.135Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:28:16.576Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:28:16.585Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:32:53.149Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:32:53.153Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:41:37.346Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:41:37.350Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:42:21.524Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:42:21.527Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:42:22.424Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:42:22.442Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:43:33.878Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:43:33.880Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:44:08.496Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:44:08.498Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:44:33.765Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T14:44:33.767Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T15:02:36.571Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T15:02:36.579Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T15:03:33.935Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T15:03:33.939Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T15:03:46.893Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T15:03:46.895Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T15:04:57.218Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T15:04:57.223Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T15:05:32.928Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-23T15:05:32.933Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-23T15:06:53.661Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T03:50:04.387Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T03:50:34.176Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T03:50:34.184Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T03:50:43.500Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T03:50:43.503Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T03:56:50.271Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T03:56:50.281Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:06:10.341Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:06:22.290Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:07:38.713Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:07:50.990Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:08:13.939Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:15:08.877Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:15:21.104Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:19:51.899Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:31:01.444Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:31:12.768Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:31:40.487Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-24T04:42:26.660Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:43:00.942Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:50:22.880Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-24T04:51:44.718Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T04:51:49.749Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T04:57:17.545Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T04:57:17.566Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-24T14:15:58.994Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-24T14:47:54.533Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T14:48:41.385Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T14:48:41.392Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T14:56:47.229Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T14:56:47.240Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T14:57:42.136Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-24T14:57:42.139Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-26T05:04:38.247Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-26T05:06:47.493Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-26T05:23:17.940Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-26T05:23:22.412Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-26T05:44:08.815Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:08.082Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:08.094Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:16.729Z"}
+{"level":"info","message":"Poll created successfully: 1cc87af2-36cd-4f46-a2a9-bb466823c364","timestamp":"2024-09-26T05:52:16.738Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:16.744Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:28.791Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:32.479Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:32.483Z"}
+{"level":"info","message":"Attempting to delete poll 1cc87af2-36cd-4f46-a2a9-bb466823c364 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:35.163Z"}
+{"level":"info","message":"Poll 1cc87af2-36cd-4f46-a2a9-bb466823c364 deleted successfully","timestamp":"2024-09-26T05:52:35.173Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:35.179Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:39.437Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:39.443Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:40.456Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:40.459Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:42.491Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:42.493Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:43.264Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:43.273Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:49.526Z"}
+{"level":"info","message":"Poll created successfully: 70c75e7a-89b1-4215-973a-7e6e3a733791","timestamp":"2024-09-26T05:52:49.530Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:49.535Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:57.016Z"}
+{"level":"info","message":"Poll created successfully: 3ed205c9-13d3-4266-871a-c1fecb635caf","timestamp":"2024-09-26T05:52:57.019Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:52:57.025Z"}
+{"level":"info","message":"Attempting to delete poll 3ed205c9-13d3-4266-871a-c1fecb635caf for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:53:38.574Z"}
+{"level":"info","message":"Poll 3ed205c9-13d3-4266-871a-c1fecb635caf deleted successfully","timestamp":"2024-09-26T05:53:38.577Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:53:38.582Z"}
+{"level":"info","message":"Attempting to delete poll 70c75e7a-89b1-4215-973a-7e6e3a733791 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:53:39.291Z"}
+{"level":"info","message":"Poll 70c75e7a-89b1-4215-973a-7e6e3a733791 deleted successfully","timestamp":"2024-09-26T05:53:39.293Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:53:39.296Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:53:45.718Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:53:50.116Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:53:50.119Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:53:52.838Z"}
+{"level":"info","message":"Poll created successfully: 6ed34a2e-be82-4d4d-a24c-03d4e29875aa","timestamp":"2024-09-26T05:53:52.842Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:53:52.848Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T05:53:59.833Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:38.334Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:38.337Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:43.162Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:43.172Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:44.643Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:44.647Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:46.812Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:46.814Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:47.561Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:47.566Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:48.583Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:48.589Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:49.653Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:18:49.657Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:19:00.164Z"}
+{"level":"info","message":"Poll created successfully: a98409da-4d1e-4a78-a54e-c06c5a5b24bd","timestamp":"2024-09-26T06:19:00.178Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:19:00.185Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:19:20.641Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:19:20.651Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:19:21.640Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T06:19:21.643Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-26T17:28:33.927Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-26T17:28:41.090Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:29:02.468Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:29:02.490Z"}
+{"level":"info","message":"Attempting to delete poll 6ed34a2e-be82-4d4d-a24c-03d4e29875aa for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:29:09.259Z"}
+{"level":"info","message":"Poll 6ed34a2e-be82-4d4d-a24c-03d4e29875aa deleted successfully","timestamp":"2024-09-26T17:29:09.272Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:29:09.280Z"}
+{"level":"info","message":"Attempting to delete poll a98409da-4d1e-4a78-a54e-c06c5a5b24bd for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:29:09.663Z"}
+{"level":"info","message":"Poll a98409da-4d1e-4a78-a54e-c06c5a5b24bd deleted successfully","timestamp":"2024-09-26T17:29:09.667Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:29:09.674Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:29:14.344Z"}
+{"level":"info","message":"Poll created successfully: cae522c5-af96-4129-8a75-dcd1452f7700","timestamp":"2024-09-26T17:29:14.366Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:29:14.371Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:29:40.170Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:43:37.207Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:43:37.215Z"}
+{"level":"info","message":"Attempting to delete poll cae522c5-af96-4129-8a75-dcd1452f7700 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:43:39.199Z"}
+{"level":"info","message":"Poll cae522c5-af96-4129-8a75-dcd1452f7700 deleted successfully","timestamp":"2024-09-26T17:43:39.205Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:43:39.210Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:43:42.180Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:43:42.186Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:43:42.908Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T17:43:42.912Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:29:58.175Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:29:58.195Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:30:03.596Z"}
+{"level":"info","message":"Poll created successfully: 7b6c4f56-328f-402c-bd1e-753aa7a06c19","timestamp":"2024-09-26T18:30:03.605Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:30:03.612Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:31:41.983Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:31:41.993Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:31:46.171Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:31:57.006Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:31:57.008Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:31:58.212Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:31:58.215Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:31:59.011Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T18:31:59.021Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T19:10:46.719Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T19:10:46.728Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T19:10:51.319Z"}
+{"level":"info","message":"Poll created successfully: f1781eb3-baee-4bbb-8159-b62765414566","timestamp":"2024-09-26T19:10:51.325Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T19:10:51.331Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-26T20:33:01.830Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-26T20:33:24.978Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:34:46.202Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:34:46.210Z"}
+{"level":"info","message":"Attempting to delete poll 7b6c4f56-328f-402c-bd1e-753aa7a06c19 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:34:48.244Z"}
+{"level":"info","message":"Poll 7b6c4f56-328f-402c-bd1e-753aa7a06c19 deleted successfully","timestamp":"2024-09-26T20:34:48.258Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:34:48.264Z"}
+{"level":"info","message":"Attempting to delete poll f1781eb3-baee-4bbb-8159-b62765414566 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:34:48.426Z"}
+{"level":"info","message":"Poll f1781eb3-baee-4bbb-8159-b62765414566 deleted successfully","timestamp":"2024-09-26T20:34:48.430Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:34:48.435Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:34:51.553Z"}
+{"level":"info","message":"Poll created successfully: d8345e94-342d-4ffd-9403-b16d84bbfb5a","timestamp":"2024-09-26T20:34:51.559Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:34:51.565Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:51:31.581Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:51:31.591Z"}
+{"level":"info","message":"Attempting to delete poll d8345e94-342d-4ffd-9403-b16d84bbfb5a for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:51:33.671Z"}
+{"level":"info","message":"Poll d8345e94-342d-4ffd-9403-b16d84bbfb5a deleted successfully","timestamp":"2024-09-26T20:51:33.678Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:51:33.683Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:51:39.023Z"}
+{"level":"info","message":"Poll created successfully: a528364c-9008-4d32-a270-954778fdc388","timestamp":"2024-09-26T20:51:39.029Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:51:39.035Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:53:23.157Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:53:37.317Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:53:37.336Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:53:43.878Z"}
+{"level":"info","message":"Poll created successfully: 82fa813f-9d46-41ed-ad6f-28b430b7348c","timestamp":"2024-09-26T20:53:43.883Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:53:43.888Z"}
+{"level":"info","message":"Attempting to delete poll a528364c-9008-4d32-a270-954778fdc388 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:55:54.330Z"}
+{"level":"info","message":"Poll a528364c-9008-4d32-a270-954778fdc388 deleted successfully","timestamp":"2024-09-26T20:55:54.337Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:55:54.343Z"}
+{"level":"info","message":"Attempting to delete poll 82fa813f-9d46-41ed-ad6f-28b430b7348c for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:55:54.912Z"}
+{"level":"info","message":"Poll 82fa813f-9d46-41ed-ad6f-28b430b7348c deleted successfully","timestamp":"2024-09-26T20:55:54.917Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:55:54.922Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:55:58.436Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T20:55:58.440Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T23:37:28.987Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T23:37:28.994Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T23:37:33.037Z"}
+{"level":"info","message":"Poll created successfully: 64520a40-1400-4e83-b8be-36e3ca89f4ab","timestamp":"2024-09-26T23:37:33.044Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-26T23:37:33.049Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-27T00:18:46.231Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-27T00:18:52.785Z"}
+{"level":"info","message":"CORS origin set to: https://9a34-4-39-78-4.ngrok-free.app","timestamp":"2024-09-27T00:18:52.786Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T00:19:44.519Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T00:19:44.528Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T00:20:04.557Z"}
+{"level":"info","message":"Poll created successfully: e3ffdf2c-ab62-4d33-a4fe-ae639e725d95","timestamp":"2024-09-27T00:20:04.563Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T00:20:04.571Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T00:20:39.232Z"}
+{"level":"info","message":"Poll created successfully: 293d8cdf-3f59-46ec-9d48-744fd87a11ba","timestamp":"2024-09-27T00:20:39.237Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T00:20:39.244Z"}
+{"level":"info","message":"Fetching poll with id: 293d8cdf-3f59-46ec-9d48-744fd87a11ba","timestamp":"2024-09-27T00:28:22.009Z"}
+{"level":"info","message":"Fetching poll with id: 293d8cdf-3f59-46ec-9d48-744fd87a11ba","timestamp":"2024-09-27T00:28:22.027Z"}
+{"level":"info","message":"Received vote for poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba: 😐","timestamp":"2024-09-27T00:28:40.847Z"}
+{"level":"info","message":"Vote recorded successfully for poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba","timestamp":"2024-09-27T00:28:40.861Z"}
+{"level":"info","message":"Fetching poll with id: 293d8cdf-3f59-46ec-9d48-744fd87a11ba","timestamp":"2024-09-27T00:28:50.350Z"}
+{"level":"info","message":"Fetching poll with id: 293d8cdf-3f59-46ec-9d48-744fd87a11ba","timestamp":"2024-09-27T00:28:50.354Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:06:18.127Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:06:18.138Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:06:23.813Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:06:31.283Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:06:31.286Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:06:37.990Z"}
+{"level":"info","message":"Poll created successfully: 83aac97e-0972-4a73-8604-7f777e5c2ec7","timestamp":"2024-09-27T04:06:38.006Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:06:38.012Z"}
+{"level":"info","message":"Attempting to delete poll 83aac97e-0972-4a73-8604-7f777e5c2ec7 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:08:17.766Z"}
+{"level":"info","message":"Poll 83aac97e-0972-4a73-8604-7f777e5c2ec7 deleted successfully","timestamp":"2024-09-27T04:08:17.777Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:08:17.785Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:08:21.910Z"}
+{"level":"info","message":"Poll created successfully: f64d20f8-9019-4f8b-a4f8-c0d6272436f2","timestamp":"2024-09-27T04:08:21.915Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:08:21.921Z"}
+{"level":"info","message":"Fetching poll with id: 64520a40-1400-4e83-b8be-36e3ca89f4ab","timestamp":"2024-09-27T04:11:22.428Z"}
+{"level":"info","message":"Fetching poll with id: 64520a40-1400-4e83-b8be-36e3ca89f4ab","timestamp":"2024-09-27T04:11:22.440Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:17:44.788Z"}
+{"level":"info","message":"Poll created successfully: 0ee0a88a-cc26-479a-a0cf-46b8cef97849","timestamp":"2024-09-27T04:17:44.801Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:17:44.805Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:19:45.222Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:19:45.226Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:19:53.118Z"}
+{"level":"info","message":"Poll created successfully: d9b1ea31-5319-4dbc-a3ef-e3f7ab455f0a","timestamp":"2024-09-27T04:19:53.119Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:19:53.123Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:24:00.395Z"}
+{"level":"info","message":"Poll created successfully: 05402bdf-a0fd-4102-9fae-8c99526324fd","timestamp":"2024-09-27T04:24:00.399Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:24:00.404Z"}
+{"level":"info","message":"Fetching poll with id: 05402bdf-a0fd-4102-9fae-8c99526324fd","timestamp":"2024-09-27T04:25:19.830Z"}
+{"level":"info","message":"Fetching poll with id: 05402bdf-a0fd-4102-9fae-8c99526324fd","timestamp":"2024-09-27T04:25:19.835Z"}
+{"level":"info","message":"Fetching poll with id: 05402bdf-a0fd-4102-9fae-8c99526324fd","timestamp":"2024-09-27T04:51:56.794Z"}
+{"level":"info","message":"Fetching poll with id: 05402bdf-a0fd-4102-9fae-8c99526324fd","timestamp":"2024-09-27T04:51:56.827Z"}
+{"level":"info","message":"Fetching poll with id: 05402bdf-a0fd-4102-9fae-8c99526324fd","timestamp":"2024-09-27T04:54:51.743Z"}
+{"level":"info","message":"Fetching poll with id: 05402bdf-a0fd-4102-9fae-8c99526324fd","timestamp":"2024-09-27T04:54:51.750Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:56:19.806Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:57:18.625Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T04:57:18.628Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:05:32.523Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:05:32.529Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:05:39.095Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:05:49.440Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:05:49.442Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:05:53.491Z"}
+{"level":"info","message":"Poll created successfully: 2144e919-4921-4617-9654-184fd1970674","timestamp":"2024-09-27T05:05:53.500Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:05:53.505Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:18:11.979Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:18:11.987Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:18:14.714Z"}
+{"level":"info","message":"Poll created successfully: b878a1ff-4379-4cfc-a4d8-197b3fb551ab","timestamp":"2024-09-27T05:18:14.716Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:18:14.719Z"}
+{"level":"info","message":"Fetching poll with id: b878a1ff-4379-4cfc-a4d8-197b","timestamp":"2024-09-27T05:19:00.803Z"}
+{"level":"warn","message":"Poll not found: b878a1ff-4379-4cfc-a4d8-197b","timestamp":"2024-09-27T05:19:00.820Z"}
+{"level":"error","message":"Error in getPoll: Poll not found","stack":"Error: Poll not found\n    at getPoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:21:13)","statusCode":404,"timestamp":"2024-09-27T05:19:00.833Z"}
+{"level":"info","message":"Fetching poll with id: b878a1ff-4379-4cfc-a4d8-197b","timestamp":"2024-09-27T05:19:00.836Z"}
+{"level":"warn","message":"Poll not found: b878a1ff-4379-4cfc-a4d8-197b","timestamp":"2024-09-27T05:19:00.837Z"}
+{"level":"error","message":"Error in getPoll: Poll not found","stack":"Error: Poll not found\n    at getPoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:21:13)","statusCode":404,"timestamp":"2024-09-27T05:19:00.837Z"}
+{"level":"info","message":"Fetching poll with id: b878a1ff-4379-4cfc-a4d8-197b","timestamp":"2024-09-27T05:19:19.755Z"}
+{"level":"warn","message":"Poll not found: b878a1ff-4379-4cfc-a4d8-197b","timestamp":"2024-09-27T05:19:19.757Z"}
+{"level":"error","message":"Error in getPoll: Poll not found","stack":"Error: Poll not found\n    at getPoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:21:13)","statusCode":404,"timestamp":"2024-09-27T05:19:19.757Z"}
+{"level":"info","message":"Fetching poll with id: b878a1ff-4379-4cfc-a4d8-197b","timestamp":"2024-09-27T05:19:19.758Z"}
+{"level":"warn","message":"Poll not found: b878a1ff-4379-4cfc-a4d8-197b","timestamp":"2024-09-27T05:19:19.759Z"}
+{"level":"error","message":"Error in getPoll: Poll not found","stack":"Error: Poll not found\n    at getPoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:21:13)","statusCode":404,"timestamp":"2024-09-27T05:19:19.760Z"}
+{"level":"info","message":"Attempting to delete poll 64520a40-1400-4e83-b8be-36e3ca89f4ab for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:19:41.734Z"}
+{"level":"info","message":"Poll 64520a40-1400-4e83-b8be-36e3ca89f4ab deleted successfully","timestamp":"2024-09-27T05:19:41.747Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:19:41.755Z"}
+{"level":"info","message":"Attempting to delete poll e3ffdf2c-ab62-4d33-a4fe-ae639e725d95 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:19:41.897Z"}
+{"level":"info","message":"Poll e3ffdf2c-ab62-4d33-a4fe-ae639e725d95 deleted successfully","timestamp":"2024-09-27T05:19:41.900Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:19:41.904Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:19:42.055Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-27T05:19:42.083Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:19:45.573Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-27T05:20:03.624Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-27T05:25:09.462Z"}
+{"level":"info","message":"CORS origin set to: https://9a34-4-39-78-4.ngrok-free.app","timestamp":"2024-09-27T05:25:09.463Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:27:37.989Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:27:37.997Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:27:44.114Z"}
+{"level":"info","message":"Poll created successfully: 882079f2-16d5-43e6-bf38-28650da33c81","timestamp":"2024-09-27T05:27:44.119Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T05:27:44.123Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T15:24:35.681Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T15:24:35.690Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T15:24:53.613Z"}
+{"level":"info","message":"Poll created successfully: be731a4d-ef9d-4454-8811-b8cfdfa52011","timestamp":"2024-09-27T15:24:53.620Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T15:24:53.626Z"}
+{"level":"info","message":"Fetching poll with id: be731a4d-ef9d-4454-8811-b8cfdfa52011","timestamp":"2024-09-27T15:25:08.028Z"}
+{"level":"info","message":"Fetching poll with id: be731a4d-ef9d-4454-8811-b8cfdfa52011","timestamp":"2024-09-27T15:25:08.034Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T16:00:35.792Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T16:00:35.798Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T16:00:47.362Z"}
+{"level":"info","message":"Poll created successfully: d92f9ad4-1c0b-4872-87a9-63d9d07f3fba","timestamp":"2024-09-27T16:00:47.366Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T16:00:47.371Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T16:06:25.550Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T16:06:25.556Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T16:06:32.684Z"}
+{"level":"info","message":"Poll created successfully: 3a16069f-99d8-4ebd-bda0-616d54590480","timestamp":"2024-09-27T16:06:32.689Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T16:06:32.695Z"}
+{"level":"info","message":"Fetching poll with id: 3a16069f-99d8-4ebd-bda0-616d54590480","timestamp":"2024-09-27T16:08:27.031Z"}
+{"level":"info","message":"Fetching poll with id: 3a16069f-99d8-4ebd-bda0-616d54590480","timestamp":"2024-09-27T16:08:27.042Z"}
+{"level":"info","message":"Received vote for poll 3a16069f-99d8-4ebd-bda0-616d54590480: 😢","timestamp":"2024-09-27T16:10:50.680Z"}
+{"level":"info","message":"Vote recorded successfully for poll 3a16069f-99d8-4ebd-bda0-616d54590480","timestamp":"2024-09-27T16:10:50.692Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T22:25:22.848Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T22:25:22.854Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T22:25:39.285Z"}
+{"level":"info","message":"Poll created successfully: ac4e6631-e88b-467e-8f72-78844f1eb06a","timestamp":"2024-09-27T22:25:39.289Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-27T22:25:39.295Z"}
+{"level":"info","message":"Fetching poll with id: ac4e6631-e88b-467e-8f72-78844f1eb06a","timestamp":"2024-09-27T22:25:53.286Z"}
+{"level":"info","message":"Fetching poll with id: ac4e6631-e88b-467e-8f72-78844f1eb06a","timestamp":"2024-09-27T22:25:53.290Z"}
+{"level":"info","message":"Fetching poll with id: ac4e6631-e88b-467e-8f72-78844f1eb06a","timestamp":"2024-09-27T22:36:13.498Z"}
+{"level":"info","message":"Fetching poll with id: ac4e6631-e88b-467e-8f72-78844f1eb06a","timestamp":"2024-09-27T22:36:13.501Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-27T22:39:18.019Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-28T00:21:22.421Z"}
+{"level":"info","message":"CORS origin set to: https://9a34-4-39-78-4.ngrok-free.app","timestamp":"2024-09-28T00:21:22.422Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-28T00:22:28.317Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-28T00:22:28.330Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-28T00:22:33.463Z"}
+{"level":"info","message":"Poll created successfully: 3cc7561c-6c7c-4bf6-a8ab-f0f28b1c319e","timestamp":"2024-09-28T00:22:33.477Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-28T00:22:33.482Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-28T02:02:44.254Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-28T02:56:57.462Z"}
+{"level":"info","message":"CORS origin set to: http://127.0.0.1:3001","timestamp":"2024-09-28T02:56:57.463Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-28T02:57:32.885Z"}
+{"level":"info","message":"Poll created successfully: 028bf4dd-e151-466c-8a85-a104a26f44c2","timestamp":"2024-09-28T02:57:32.909Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-28T02:58:40.893Z"}
+{"level":"info","message":"Poll created successfully: a59b1941-653f-46e1-8e7a-bb06e1848fba","timestamp":"2024-09-28T02:58:40.913Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-28T03:02:29.192Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-28T03:02:34.590Z"}
+{"level":"info","message":"CORS origin set to: http://localhost:3001","timestamp":"2024-09-28T03:02:34.591Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-28T03:08:32.705Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-28T03:20:02.867Z"}
+{"level":"info","message":"CORS origin set to: https://b7ae-2601-602-8101-7230-7d4a-5a93-72ca-5644.ngrok-free.app","timestamp":"2024-09-28T03:20:02.868Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-28T03:20:28.021Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-28T03:20:28.030Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-28T03:20:31.711Z"}
+{"level":"info","message":"Poll created successfully: d5f0883c-8b96-4848-ba58-aebbcf930728","timestamp":"2024-09-28T03:20:31.722Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-28T03:20:31.726Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-28T03:30:08.880Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T07:14:46.883Z"}
+{"level":"info","message":"CORS origin set to: https://b7ae-2601-602-8101-7230-7d4a-5a93-72ca-5644.ngrok-free.app","timestamp":"2024-09-29T07:14:46.884Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:15:08.565Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:15:08.576Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:15:12.524Z"}
+{"level":"info","message":"Poll created successfully: 00f8b1af-c73b-40a7-b102-4133cc1fa798","timestamp":"2024-09-29T07:15:12.532Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:15:12.535Z"}
+{"level":"info","message":"Fetching poll with id: 00f8b1af-c73b-40a7-b102-4133cc1fa798","timestamp":"2024-09-29T07:16:27.966Z"}
+{"level":"info","message":"Fetching poll with id: 00f8b1af-c73b-40a7-b102-4133cc1fa798","timestamp":"2024-09-29T07:16:27.984Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T07:18:09.562Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T07:19:20.655Z"}
+{"level":"info","message":"CORS origin set to: https://b7ae-2601-602-8101-7230-7d4a-5a93-72ca-5644.ngrok-free.app","timestamp":"2024-09-29T07:19:20.656Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:19:53.166Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:19:53.173Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:20:00.623Z"}
+{"level":"info","message":"Poll created successfully: aa21a4ba-40a1-4301-95d8-87b5294dc501","timestamp":"2024-09-29T07:20:00.637Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:20:00.641Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T07:31:50.336Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T07:33:49.810Z"}
+{"level":"info","message":"CORS origin set to: https://b7ae-2601-602-8101-7230-7d4a-5a93-72ca-5644.ngrok-free.app","timestamp":"2024-09-29T07:33:49.811Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:34:32.208Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:34:32.216Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:34:36.069Z"}
+{"level":"info","message":"Poll created successfully: 0387c6d2-f632-4f8a-a739-cd825bdfc425","timestamp":"2024-09-29T07:34:36.079Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:34:36.085Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:35:13.003Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:35:13.011Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:35:32.945Z"}
+{"level":"info","message":"Poll created successfully: 11d0d4c5-c090-4d3a-a9bb-29fbbaeecfb7","timestamp":"2024-09-29T07:35:32.951Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:35:32.975Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:35:37.879Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:35:37.885Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T07:47:22.167Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T07:47:27.641Z"}
+{"level":"info","message":"CORS origin set to: https://b7ae-2601-602-8101-7230-7d4a-5a93-72ca-5644.ngrok-free.app","timestamp":"2024-09-29T07:47:27.641Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:47:51.504Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:47:55.231Z"}
+{"level":"info","message":"Poll created successfully: f7ebc769-da6a-487e-905c-2fd9ba9aea22","timestamp":"2024-09-29T07:47:55.237Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:47:55.242Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T07:51:22.109Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T07:53:59.829Z"}
+{"level":"info","message":"CORS origin set to: https://6b21-4-39-78-4.ngrok-free.app","timestamp":"2024-09-29T07:53:59.830Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:54:18.867Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:54:21.516Z"}
+{"level":"info","message":"Poll created successfully: 23b58238-2bf5-47b7-925d-8323bb838a10","timestamp":"2024-09-29T07:54:21.523Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T07:54:21.527Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:08:28.807Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:08:31.128Z"}
+{"level":"info","message":"Poll created successfully: 1e9ba40c-9b84-4a2e-b5f9-05122411be9c","timestamp":"2024-09-29T08:08:31.135Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:08:31.138Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T08:14:11.040Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T08:14:34.459Z"}
+{"level":"info","message":"CORS origin set to: https://6b21-4-39-78-4.ngrok-free.app","timestamp":"2024-09-29T08:14:34.460Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:14:54.135Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:14:58.539Z"}
+{"level":"info","message":"Poll created successfully: dd812232-d7b5-4816-a5b3-339bcdd896f3","timestamp":"2024-09-29T08:14:58.545Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:14:58.549Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T08:16:02.531Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T08:16:08.219Z"}
+{"level":"info","message":"CORS origin set to: https://7f42-4-39-78-6.ngrok-free.app","timestamp":"2024-09-29T08:16:08.220Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T08:16:53.217Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T08:17:53.951Z"}
+{"level":"info","message":"CORS origin set to: https://2505-4-39-78-7.ngrok-free.app","timestamp":"2024-09-29T08:17:53.952Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:18:10.465Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:18:12.569Z"}
+{"level":"info","message":"Poll created successfully: 2252a4a0-e3d5-4cfc-8070-4306ce400ef0","timestamp":"2024-09-29T08:18:12.575Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:18:12.580Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:18:19.860Z"}
+{"level":"info","message":"Poll created successfully: 11fa1597-b040-4ed9-8b22-c13d043b04f1","timestamp":"2024-09-29T08:18:19.865Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:18:19.870Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:43.115Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:48.972Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:25:49.002Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:49.651Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:25:49.654Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:50.931Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:25:50.937Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:51.555Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:25:51.560Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:53.725Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:25:53.728Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:54.093Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:25:54.097Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:54.244Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:25:54.251Z"}
+{"level":"info","message":"Attempting to delete poll f64d20f8-9019-4f8b-a4f8-c0d6272436f2 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:55.882Z"}
+{"level":"info","message":"Poll f64d20f8-9019-4f8b-a4f8-c0d6272436f2 deleted successfully","timestamp":"2024-09-29T08:25:55.883Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:55.887Z"}
+{"level":"info","message":"Attempting to delete poll 0ee0a88a-cc26-479a-a0cf-46b8cef97849 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:56.140Z"}
+{"level":"info","message":"Poll 0ee0a88a-cc26-479a-a0cf-46b8cef97849 deleted successfully","timestamp":"2024-09-29T08:25:56.143Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:56.148Z"}
+{"level":"info","message":"Attempting to delete poll d92f9ad4-1c0b-4872-87a9-63d9d07f3fba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:59.097Z"}
+{"level":"info","message":"Poll d92f9ad4-1c0b-4872-87a9-63d9d07f3fba deleted successfully","timestamp":"2024-09-29T08:25:59.100Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:59.105Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:59.268Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:25:59.273Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:59.430Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:25:59.434Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:25:59.604Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:25:59.609Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:00.489Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:00.494Z"}
+{"level":"info","message":"Attempting to delete poll ac4e6631-e88b-467e-8f72-78844f1eb06a for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:01.727Z"}
+{"level":"info","message":"Poll ac4e6631-e88b-467e-8f72-78844f1eb06a deleted successfully","timestamp":"2024-09-29T08:26:01.730Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:01.736Z"}
+{"level":"info","message":"Attempting to delete poll 3cc7561c-6c7c-4bf6-a8ab-f0f28b1c319e for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:03.534Z"}
+{"level":"info","message":"Poll 3cc7561c-6c7c-4bf6-a8ab-f0f28b1c319e deleted successfully","timestamp":"2024-09-29T08:26:03.538Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:03.542Z"}
+{"level":"info","message":"Attempting to delete poll 028bf4dd-e151-466c-8a85-a104a26f44c2 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:04.523Z"}
+{"level":"info","message":"Poll 028bf4dd-e151-466c-8a85-a104a26f44c2 deleted successfully","timestamp":"2024-09-29T08:26:04.526Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:04.530Z"}
+{"level":"info","message":"Attempting to delete poll a59b1941-653f-46e1-8e7a-bb06e1848fba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:05.332Z"}
+{"level":"info","message":"Poll a59b1941-653f-46e1-8e7a-bb06e1848fba deleted successfully","timestamp":"2024-09-29T08:26:05.334Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:05.338Z"}
+{"level":"info","message":"Attempting to delete poll d5f0883c-8b96-4848-ba58-aebbcf930728 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:06.008Z"}
+{"level":"info","message":"Poll d5f0883c-8b96-4848-ba58-aebbcf930728 deleted successfully","timestamp":"2024-09-29T08:26:06.011Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:06.015Z"}
+{"level":"info","message":"Attempting to delete poll 00f8b1af-c73b-40a7-b102-4133cc1fa798 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:06.537Z"}
+{"level":"info","message":"Poll 00f8b1af-c73b-40a7-b102-4133cc1fa798 deleted successfully","timestamp":"2024-09-29T08:26:06.539Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:06.544Z"}
+{"level":"info","message":"Attempting to delete poll aa21a4ba-40a1-4301-95d8-87b5294dc501 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:06.947Z"}
+{"level":"info","message":"Poll aa21a4ba-40a1-4301-95d8-87b5294dc501 deleted successfully","timestamp":"2024-09-29T08:26:06.950Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:06.957Z"}
+{"level":"info","message":"Attempting to delete poll 0387c6d2-f632-4f8a-a739-cd825bdfc425 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:07.309Z"}
+{"level":"info","message":"Poll 0387c6d2-f632-4f8a-a739-cd825bdfc425 deleted successfully","timestamp":"2024-09-29T08:26:07.312Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:07.316Z"}
+{"level":"info","message":"Attempting to delete poll 11d0d4c5-c090-4d3a-a9bb-29fbbaeecfb7 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:07.639Z"}
+{"level":"info","message":"Poll 11d0d4c5-c090-4d3a-a9bb-29fbbaeecfb7 deleted successfully","timestamp":"2024-09-29T08:26:07.642Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:07.647Z"}
+{"level":"info","message":"Attempting to delete poll f7ebc769-da6a-487e-905c-2fd9ba9aea22 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:07.918Z"}
+{"level":"info","message":"Poll f7ebc769-da6a-487e-905c-2fd9ba9aea22 deleted successfully","timestamp":"2024-09-29T08:26:07.921Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:07.924Z"}
+{"level":"info","message":"Attempting to delete poll 23b58238-2bf5-47b7-925d-8323bb838a10 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:08.087Z"}
+{"level":"info","message":"Poll 23b58238-2bf5-47b7-925d-8323bb838a10 deleted successfully","timestamp":"2024-09-29T08:26:08.089Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:08.093Z"}
+{"level":"info","message":"Attempting to delete poll 1e9ba40c-9b84-4a2e-b5f9-05122411be9c for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:08.259Z"}
+{"level":"info","message":"Poll 1e9ba40c-9b84-4a2e-b5f9-05122411be9c deleted successfully","timestamp":"2024-09-29T08:26:08.260Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:08.262Z"}
+{"level":"info","message":"Attempting to delete poll dd812232-d7b5-4816-a5b3-339bcdd896f3 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:08.425Z"}
+{"level":"info","message":"Poll dd812232-d7b5-4816-a5b3-339bcdd896f3 deleted successfully","timestamp":"2024-09-29T08:26:08.428Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:08.431Z"}
+{"level":"info","message":"Attempting to delete poll 11fa1597-b040-4ed9-8b22-c13d043b04f1 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:09.682Z"}
+{"level":"info","message":"Poll 11fa1597-b040-4ed9-8b22-c13d043b04f1 deleted successfully","timestamp":"2024-09-29T08:26:09.685Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:09.689Z"}
+{"level":"info","message":"Attempting to delete poll 2252a4a0-e3d5-4cfc-8070-4306ce400ef0 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:10.268Z"}
+{"level":"info","message":"Poll 2252a4a0-e3d5-4cfc-8070-4306ce400ef0 deleted successfully","timestamp":"2024-09-29T08:26:10.269Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:10.271Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:10.617Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:10.623Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:10.780Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:10.784Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:11.259Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:11.263Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:11.578Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:11.583Z"}
+{"level":"info","message":"Attempting to delete poll be731a4d-ef9d-4454-8811-b8cfdfa52011 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:12.189Z"}
+{"level":"info","message":"Poll be731a4d-ef9d-4454-8811-b8cfdfa52011 deleted successfully","timestamp":"2024-09-29T08:26:12.192Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:12.197Z"}
+{"level":"info","message":"Attempting to delete poll 882079f2-16d5-43e6-bf38-28650da33c81 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:12.923Z"}
+{"level":"info","message":"Poll 882079f2-16d5-43e6-bf38-28650da33c81 deleted successfully","timestamp":"2024-09-29T08:26:12.925Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:12.930Z"}
+{"level":"info","message":"Attempting to delete poll 2144e919-4921-4617-9654-184fd1970674 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:13.746Z"}
+{"level":"info","message":"Poll 2144e919-4921-4617-9654-184fd1970674 deleted successfully","timestamp":"2024-09-29T08:26:13.749Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:13.753Z"}
+{"level":"info","message":"Attempting to delete poll d9b1ea31-5319-4dbc-a3ef-e3f7ab455f0a for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:14.500Z"}
+{"level":"info","message":"Poll d9b1ea31-5319-4dbc-a3ef-e3f7ab455f0a deleted successfully","timestamp":"2024-09-29T08:26:14.502Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:14.505Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:15.242Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:15.247Z"}
+{"level":"info","message":"Attempting to delete poll 05402bdf-a0fd-4102-9fae-8c99526324fd for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:15.917Z"}
+{"level":"info","message":"Poll 05402bdf-a0fd-4102-9fae-8c99526324fd deleted successfully","timestamp":"2024-09-29T08:26:15.921Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:15.925Z"}
+{"level":"info","message":"Attempting to delete poll b878a1ff-4379-4cfc-a4d8-197b3fb551ab for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:17.201Z"}
+{"level":"info","message":"Poll b878a1ff-4379-4cfc-a4d8-197b3fb551ab deleted successfully","timestamp":"2024-09-29T08:26:17.205Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:17.212Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:17.850Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:17.856Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:18.440Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:18.445Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:19.093Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:19.098Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:19.678Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:19.684Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:20.278Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:20.280Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:20.487Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:20.490Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:20.727Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:20.730Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:21.138Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:21.143Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:24.590Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:36.380Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:37.756Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T08:26:37.760Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:41.382Z"}
+{"level":"info","message":"Poll created successfully: 69b9b861-af21-4413-8438-3fd4ab878bf9","timestamp":"2024-09-29T08:26:41.385Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:26:41.390Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:27:52.169Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:27:52.173Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:27:54.677Z"}
+{"level":"info","message":"Poll created successfully: dc2389d9-76f2-4c87-80f9-d69cd75142e5","timestamp":"2024-09-29T08:27:54.680Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:27:54.683Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T08:58:29.456Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T08:59:12.329Z"}
+{"level":"info","message":"CORS origin set to: https://7185-4-39-78-3.ngrok-free.app","timestamp":"2024-09-29T08:59:12.330Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:59:33.522Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:59:37.220Z"}
+{"level":"info","message":"Poll created successfully: 984688ca-a141-4052-be0f-582bd1794be6","timestamp":"2024-09-29T08:59:37.224Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T08:59:37.229Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T09:01:25.240Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T09:03:13.033Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T09:03:15.387Z"}
+{"level":"info","message":"Poll created successfully: 8d7dc2a3-2960-4983-85ee-36b1ca57c4d4","timestamp":"2024-09-29T09:03:15.394Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T09:03:15.399Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T14:56:29.390Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T15:00:38.005Z"}
+{"level":"info","message":"CORS origin set to: https://c22d-4-39-78-4.ngrok-free.app","timestamp":"2024-09-29T15:00:38.006Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:01:13.983Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:01:26.140Z"}
+{"level":"info","message":"Poll created successfully: f799ee53-54a9-4287-85cf-4bc13d5a3489","timestamp":"2024-09-29T15:01:26.147Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:01:26.154Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T15:05:07.670Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T15:05:14.187Z"}
+{"level":"info","message":"CORS origin set to: https://c22d-4-39-78-4.ngrok-free.app","timestamp":"2024-09-29T15:05:14.187Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T15:06:26.366Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T15:06:34.370Z"}
+{"level":"info","message":"CORS origin set to: https://c22d-4-39-78-4.ngrok-free.app","timestamp":"2024-09-29T15:06:34.371Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:08:37.837Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:09:57.240Z"}
+{"level":"info","message":"Poll created successfully: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:09:57.251Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:09:57.258Z"}
+{"level":"info","message":"Fetching poll with id: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:13:58.586Z"}
+{"level":"info","message":"Fetching poll with id: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:14:26.172Z"}
+{"level":"info","message":"Fetching poll with id: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:15:02.053Z"}
+{"level":"info","message":"Fetching poll with id: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:15:04.296Z"}
+{"level":"info","message":"Fetching poll with id: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:15:04.678Z"}
+{"level":"info","message":"Fetching poll with id: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:15:04.911Z"}
+{"level":"info","message":"Fetching poll with id: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:15:05.099Z"}
+{"level":"info","message":"Fetching poll with id: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:15:05.279Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:15:52.546Z"}
+{"level":"info","message":"Poll created successfully: 9847b7c4-ca83-406b-b68b-35cf0e2bd88c","timestamp":"2024-09-29T15:15:52.551Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:15:52.558Z"}
+{"level":"info","message":"Fetching poll with id: 9847b7c4-ca83-406b-b68b-35cf0e2bd88c","timestamp":"2024-09-29T15:17:33.592Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T15:19:54.777Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T15:20:01.778Z"}
+{"level":"info","message":"CORS origin set to: https://c22d-4-39-78-4.ngrok-free.app","timestamp":"2024-09-29T15:20:01.779Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:20:34.600Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:20:44.753Z"}
+{"level":"info","message":"Poll created successfully: 59cc203f-a942-4e3f-bdc7-c9953912fff5","timestamp":"2024-09-29T15:20:44.757Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:20:44.762Z"}
+{"level":"info","message":"Fetching poll with id: 59cc203f-a942-4e3f-bdc7-c9953912fff5","timestamp":"2024-09-29T15:20:49.470Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T15:22:05.075Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T15:22:12.213Z"}
+{"level":"info","message":"CORS origin set to: https://c22d-4-39-78-4.ngrok-free.app","timestamp":"2024-09-29T15:22:12.214Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:23:35.699Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:23:42.011Z"}
+{"level":"info","message":"Poll created successfully: 5ddd4f3b-4700-44ea-bcbd-e4917befef44","timestamp":"2024-09-29T15:23:42.017Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:23:42.024Z"}
+{"level":"info","message":"Fetching poll with id: 5ddd4f3b-4700-44ea-bcbd-e4917befef44","timestamp":"2024-09-29T15:24:04.088Z"}
+{"level":"info","message":"Fetching poll with id: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:25:05.568Z"}
+{"level":"info","message":"Fetching poll with id: 9e230a3c-39d4-486f-8024-7786237539d2","timestamp":"2024-09-29T15:26:28.815Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:40:02.927Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:40:09.700Z"}
+{"level":"info","message":"Poll created successfully: 9e936eb4-bb24-4f95-9640-6882d4324bb2","timestamp":"2024-09-29T15:40:09.705Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:40:09.711Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T15:43:45.347Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T15:45:01.258Z"}
+{"level":"info","message":"CORS origin set to: https://501c-4-39-78-6.ngrok-free.app","timestamp":"2024-09-29T15:45:01.259Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:45:27.348Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:45:39.935Z"}
+{"level":"info","message":"Poll created successfully: 5c9b6936-c23b-4339-9cca-6d50b95974e7","timestamp":"2024-09-29T15:45:39.945Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:45:39.950Z"}
+{"level":"info","message":"Fetching poll with id: 5c9b6936-c23b-4339-9cca-6d50b95974e7","timestamp":"2024-09-29T15:49:08.619Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T15:56:28.121Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T15:57:05.396Z"}
+{"level":"info","message":"CORS origin set to: http://10.3.60.253:3001","timestamp":"2024-09-29T15:57:05.397Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:57:57.640Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:58:04.573Z"}
+{"level":"info","message":"Poll created successfully: 91e4bed6-634a-4150-a417-38773a6c50c0","timestamp":"2024-09-29T15:58:04.582Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:58:04.588Z"}
+{"level":"info","message":"Fetching poll with id: 91e4bed6-634a-4150-a417-38773a6c50c0","timestamp":"2024-09-29T15:58:11.757Z"}
+{"level":"info","message":"Fetching poll with id: 91e4bed6-634a-4150-a417-38773a6c50c0","timestamp":"2024-09-29T15:58:21.365Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:58:46.231Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T15:58:49.974Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:09:52.462Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:09:56.864Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:10:00.043Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:10:24.481Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:10:27.419Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:10:32.875Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:10:59.555Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:11:21.632Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:53.654Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:31:53.694Z"}
+{"level":"info","message":"Attempting to delete poll 5c9b6936-c23b-4339-9cca-6d50b95974e7 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:55.402Z"}
+{"level":"info","message":"Poll 5c9b6936-c23b-4339-9cca-6d50b95974e7 deleted successfully","timestamp":"2024-09-29T16:31:55.406Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:55.411Z"}
+{"level":"info","message":"Attempting to delete poll 9e936eb4-bb24-4f95-9640-6882d4324bb2 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:56.510Z"}
+{"level":"info","message":"Poll 9e936eb4-bb24-4f95-9640-6882d4324bb2 deleted successfully","timestamp":"2024-09-29T16:31:56.513Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:56.520Z"}
+{"level":"info","message":"Attempting to delete poll 59cc203f-a942-4e3f-bdc7-c9953912fff5 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:57.257Z"}
+{"level":"info","message":"Poll 59cc203f-a942-4e3f-bdc7-c9953912fff5 deleted successfully","timestamp":"2024-09-29T16:31:57.261Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:57.265Z"}
+{"level":"info","message":"Attempting to delete poll 9e230a3c-39d4-486f-8024-7786237539d2 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:57.773Z"}
+{"level":"info","message":"Poll 9e230a3c-39d4-486f-8024-7786237539d2 deleted successfully","timestamp":"2024-09-29T16:31:57.776Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:57.780Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:58.954Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:31:58.960Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:59.227Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:31:59.232Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:59.446Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:31:59.451Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:59.625Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:31:59.629Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:31:59.888Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:31:59.890Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:00.116Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:32:00.120Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:00.297Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:32:00.303Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:00.476Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:32:00.481Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:00.668Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:32:00.672Z"}
+{"level":"info","message":"Attempting to delete poll 91e4bed6-634a-4150-a417-38773a6c50c0 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:01.856Z"}
+{"level":"info","message":"Poll 91e4bed6-634a-4150-a417-38773a6c50c0 deleted successfully","timestamp":"2024-09-29T16:32:01.859Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:01.864Z"}
+{"level":"info","message":"Attempting to delete poll 9847b7c4-ca83-406b-b68b-35cf0e2bd88c for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:02.521Z"}
+{"level":"info","message":"Poll 9847b7c4-ca83-406b-b68b-35cf0e2bd88c deleted successfully","timestamp":"2024-09-29T16:32:02.523Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:02.528Z"}
+{"level":"info","message":"Attempting to delete poll 5ddd4f3b-4700-44ea-bcbd-e4917befef44 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:03.054Z"}
+{"level":"info","message":"Poll 5ddd4f3b-4700-44ea-bcbd-e4917befef44 deleted successfully","timestamp":"2024-09-29T16:32:03.057Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:03.063Z"}
+{"level":"info","message":"Attempting to delete poll 8d7dc2a3-2960-4983-85ee-36b1ca57c4d4 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:03.642Z"}
+{"level":"info","message":"Poll 8d7dc2a3-2960-4983-85ee-36b1ca57c4d4 deleted successfully","timestamp":"2024-09-29T16:32:03.644Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:03.647Z"}
+{"level":"info","message":"Attempting to delete poll f799ee53-54a9-4287-85cf-4bc13d5a3489 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:04.295Z"}
+{"level":"info","message":"Poll f799ee53-54a9-4287-85cf-4bc13d5a3489 deleted successfully","timestamp":"2024-09-29T16:32:04.297Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:04.301Z"}
+{"level":"info","message":"Attempting to delete poll dc2389d9-76f2-4c87-80f9-d69cd75142e5 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:04.856Z"}
+{"level":"info","message":"Poll dc2389d9-76f2-4c87-80f9-d69cd75142e5 deleted successfully","timestamp":"2024-09-29T16:32:04.857Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:04.861Z"}
+{"level":"info","message":"Attempting to delete poll 984688ca-a141-4052-be0f-582bd1794be6 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:05.343Z"}
+{"level":"info","message":"Poll 984688ca-a141-4052-be0f-582bd1794be6 deleted successfully","timestamp":"2024-09-29T16:32:05.345Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:05.350Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:06.412Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:32:06.416Z"}
+{"level":"info","message":"Attempting to delete poll 69b9b861-af21-4413-8438-3fd4ab878bf9 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:07.172Z"}
+{"level":"info","message":"Poll 69b9b861-af21-4413-8438-3fd4ab878bf9 deleted successfully","timestamp":"2024-09-29T16:32:07.174Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:07.179Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:08.188Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:32:08.191Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:32:09.105Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:32:09.109Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:41:08.437Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:41:12.732Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:41:14.806Z"}
+{"clientVersion":"5.19.1","code":"P2003","level":"error","message":"Error in deletePoll: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`","meta":{"field_name":"Vote_pollId_fkey (index)","modelName":"Poll"},"name":"PrismaClientKnownRequestError","stack":"PrismaClientKnownRequestError: \nInvalid `prisma.poll.deleteMany()` invocation in\n/Users/leoliu/Desktop/ScanPulse/src/db/queries.ts:54:22\n\n  51 }\n  52 \n  53 export async function deletePoll(pollId: string, userId: string) {\n→ 54   return prisma.poll.deleteMany(\nForeign key constraint failed on the field: `Vote_pollId_fkey (index)`\n    at Ln.handleRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7753)\n    at Ln.handleAndLogRequestError (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:7061)\n    at Ln.request (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:121:6745)\n    at async l (/Users/leoliu/Desktop/ScanPulse/node_modules/@prisma/client/runtime/library.js:130:9633)\n    at async deletePoll (/Users/leoliu/Desktop/ScanPulse/src/controllers/pollController.ts:110:25)","timestamp":"2024-09-29T16:41:14.817Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T16:45:35.757Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T16:47:30.827Z"}
+{"level":"info","message":"CORS origin set to: http://10.3.60.253:3001","timestamp":"2024-09-29T16:47:30.828Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:48:00.777Z"}
+{"level":"info","message":"Attempting to delete poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:48:02.643Z"}
+{"level":"info","message":"Poll 293d8cdf-3f59-46ec-9d48-744fd87a11ba deleted successfully","timestamp":"2024-09-29T16:48:02.650Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:48:02.655Z"}
+{"level":"info","message":"Attempting to delete poll 3a16069f-99d8-4ebd-bda0-616d54590480 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:48:03.478Z"}
+{"level":"info","message":"Poll 3a16069f-99d8-4ebd-bda0-616d54590480 deleted successfully","timestamp":"2024-09-29T16:48:03.482Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:48:03.488Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:48:05.708Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:48:06.738Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:49:34.799Z"}
+{"level":"info","message":"Poll created successfully: 715e38bc-2d47-4210-a9d0-6644c673d56d","timestamp":"2024-09-29T16:49:34.807Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T16:49:34.814Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-29T17:11:40.161Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-29T17:11:50.380Z"}
+{"level":"info","message":"CORS origin set to: http://10.3.60.253:3001","timestamp":"2024-09-29T17:11:50.381Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:12:24.709Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:17:30.821Z"}
+{"level":"info","message":"Fetching poll with id: 715e38bc-2d47-4210-a9d0-6644c673d56d","timestamp":"2024-09-29T17:17:33.903Z"}
+{"level":"info","message":"Attempting to delete poll 715e38bc-2d47-4210-a9d0-6644c673d56d for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:17:40.214Z"}
+{"level":"info","message":"Poll 715e38bc-2d47-4210-a9d0-6644c673d56d deleted successfully","timestamp":"2024-09-29T17:17:40.228Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:17:40.237Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:17:43.795Z"}
+{"level":"info","message":"Poll created successfully: 273a2a1d-b42f-4b61-81c6-0f512939cbf8","timestamp":"2024-09-29T17:17:43.798Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:17:43.801Z"}
+{"level":"info","message":"Fetching poll with id: 273a2a1d-b42f-4b61-81c6-0f512939cbf8","timestamp":"2024-09-29T17:17:46.426Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:17:50.680Z"}
+{"level":"info","message":"Fetching poll with id: 273a2a1d-b42f-4b61-81c6-0f512939cbf8","timestamp":"2024-09-29T17:17:52.937Z"}
+{"level":"info","message":"Fetching poll with id: 273a2a1d-b42f-4b61-81c6-0f512939cbf8","timestamp":"2024-09-29T17:20:48.800Z"}
+{"level":"info","message":"Received vote for poll 273a2a1d-b42f-4b61-81c6-0f512939cbf8: 😊","timestamp":"2024-09-29T17:20:50.114Z"}
+{"level":"info","message":"Vote recorded successfully for poll 273a2a1d-b42f-4b61-81c6-0f512939cbf8","timestamp":"2024-09-29T17:20:50.119Z"}
+{"level":"info","message":"Fetching poll with id: 273a2a1d-b42f-4b61-81c6-0f512939cbf8","timestamp":"2024-09-29T17:20:57.836Z"}
+{"level":"info","message":"Fetching poll with id: 273a2a1d-b42f-4b61-81c6-0f512939cbf8","timestamp":"2024-09-29T17:21:58.884Z"}
+{"level":"info","message":"Received vote for poll 273a2a1d-b42f-4b61-81c6-0f512939cbf8: 😐","timestamp":"2024-09-29T17:22:00.080Z"}
+{"level":"info","message":"Vote recorded successfully for poll 273a2a1d-b42f-4b61-81c6-0f512939cbf8","timestamp":"2024-09-29T17:22:00.084Z"}
+{"level":"info","message":"Fetching poll with id: 273a2a1d-b42f-4b61-81c6-0f512939cbf8","timestamp":"2024-09-29T17:22:00.420Z"}
+{"level":"info","message":"Fetching poll with id: 273a2a1d-b42f-4b61-81c6-0f512939cbf8","timestamp":"2024-09-29T17:22:04.269Z"}
+{"level":"info","message":"Attempting to delete poll 273a2a1d-b42f-4b61-81c6-0f512939cbf8 for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:22:09.539Z"}
+{"level":"info","message":"Poll 273a2a1d-b42f-4b61-81c6-0f512939cbf8 deleted successfully","timestamp":"2024-09-29T17:22:09.542Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:22:09.627Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:22:15.219Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:22:16.418Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:22:17.878Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:22:19.981Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:22:20.596Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:22:21.679Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:38:40.987Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:39:20.695Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-29T17:41:38.371Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-30T00:58:50.724Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-30T01:03:38.592Z"}
+{"level":"info","message":"CORS origin set to: http://10.3.60.253:3001","timestamp":"2024-09-30T01:03:38.593Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-30T01:04:39.193Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-30T01:04:51.166Z"}
+{"level":"info","message":"CORS origin set to: http://10.3.60.252:3001","timestamp":"2024-09-30T01:04:51.167Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:15.322Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:25.001Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:26.278Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:29.490Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:30.325Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:33.172Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:33.788Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:36.630Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:38.859Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:40.438Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:42.498Z"}
+{"level":"info","message":"Poll created successfully: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:05:42.511Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:05:42.517Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:05:49.704Z"}
+{"level":"info","message":"Received vote for poll 059c48f5-cebe-4bea-9191-a5581f9d6267: 😊","timestamp":"2024-09-30T01:05:52.365Z"}
+{"level":"info","message":"Vote recorded successfully for poll 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:05:52.377Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:05:53.143Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:06:06.965Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:07:15.964Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:15:21.606Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:15:24.505Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:15:27.727Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:15:34.586Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:15:40.053Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:15:44.399Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:15:49.535Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:15:51.050Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:24:03.361Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:24:07.590Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:24:15.997Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:24:37.281Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:24:40.227Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:24:46.601Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:24:49.591Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:24:51.127Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:24:53.837Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:24:54.978Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:24:56.543Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:24:58.056Z"}
+{"level":"info","message":"Received vote for poll 059c48f5-cebe-4bea-9191-a5581f9d6267: 😊","timestamp":"2024-09-30T01:25:03.788Z"}
+{"level":"info","message":"Vote recorded successfully for poll 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:25:03.795Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:25:04.143Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:25:09.034Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:25:12.925Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:25:14.470Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:25:16.544Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:25:17.180Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:25:19.616Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:25:24.837Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:28:35.600Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:28:36.555Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:28:38.567Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:28:40.599Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:32:49.808Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:32:52.272Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:42:39.965Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:43:07.519Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:43:31.626Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:43:34.038Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:46:02.577Z"}
+{"level":"info","message":"Received vote for poll 059c48f5-cebe-4bea-9191-a5581f9d6267: 😊","timestamp":"2024-09-30T01:46:05.519Z"}
+{"level":"info","message":"Vote recorded successfully for poll 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:46:05.533Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:46:05.851Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:47:25.536Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:51:23.228Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:52:42.692Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:53:03.416Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:53:06.307Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T01:57:58.825Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:58:01.338Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T01:58:14.021Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T02:00:07.884Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:01:10.094Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:01:14.896Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:05:18.137Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:05:21.674Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T02:05:23.011Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T02:05:51.601Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:05:54.184Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T02:05:55.414Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T02:06:05.325Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T02:07:38.578Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T02:07:45.673Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:07:47.238Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:07:49.567Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:07:54.432Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:07:55.391Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:07:58.877Z"}
+{"level":"info","message":"Poll created successfully: cd6fc53a-7ec0-46e1-bcec-c732191551ec","timestamp":"2024-09-30T02:07:58.892Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:07:58.895Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:08:03.391Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:09:17.849Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:09:19.729Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:09:20.252Z"}
+{"level":"info","message":"Creating new poll for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:11:44.774Z"}
+{"level":"info","message":"Poll created successfully: 6a75fbf3-122e-41b7-b613-cc88c4df63b7","timestamp":"2024-09-30T02:11:44.780Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:11:44.786Z"}
+{"level":"info","message":"Fetching poll with id: 6a75fbf3-122e-41b7-b613-cc88c4df63b7","timestamp":"2024-09-30T02:12:06.293Z"}
+{"level":"info","message":"Received vote for poll 6a75fbf3-122e-41b7-b613-cc88c4df63b7: 😊","timestamp":"2024-09-30T02:12:13.923Z"}
+{"level":"info","message":"Vote recorded successfully for poll 6a75fbf3-122e-41b7-b613-cc88c4df63b7","timestamp":"2024-09-30T02:12:13.929Z"}
+{"level":"info","message":"Fetching poll with id: 6a75fbf3-122e-41b7-b613-cc88c4df63b7","timestamp":"2024-09-30T02:12:14.281Z"}
+{"level":"info","message":"Fetching poll with id: 6a75fbf3-122e-41b7-b613-cc88c4df63b7","timestamp":"2024-09-30T02:13:15.704Z"}
+{"level":"info","message":"Received vote for poll 6a75fbf3-122e-41b7-b613-cc88c4df63b7: 😊","timestamp":"2024-09-30T02:13:19.434Z"}
+{"level":"info","message":"Vote recorded successfully for poll 6a75fbf3-122e-41b7-b613-cc88c4df63b7","timestamp":"2024-09-30T02:13:19.439Z"}
+{"level":"info","message":"Fetching poll with id: 6a75fbf3-122e-41b7-b613-cc88c4df63b7","timestamp":"2024-09-30T02:13:19.687Z"}
+{"level":"info","message":"Fetching poll with id: 6a75fbf3-122e-41b7-b613-cc88c4df63b7","timestamp":"2024-09-30T02:13:23.258Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:13:28.114Z"}
+{"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:13:35.365Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:13:36.696Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-30T02:16:56.018Z"}

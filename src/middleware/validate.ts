@@ -28,5 +28,14 @@ export const validateVote = (
     throw new AppError("Invalid emoji", 400);
   }
 
+  // You might want to add a check for allowed emojis here
+  const ALLOWED_EMOJIS = ["😊", "😐", "😢"];
+  if (!ALLOWED_EMOJIS.includes(emoji)) {
+    throw new AppError(
+      `Invalid emoji. Allowed emojis are: ${ALLOWED_EMOJIS.join(", ")}`,
+      400
+    );
+  }
+
   next();
 };
