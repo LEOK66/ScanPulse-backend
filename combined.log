@@ -954,3 +954,9 @@
 {"level":"info","message":"Fetching all polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:13:35.365Z"}
 {"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:13:36.696Z"}
 {"level":"info","message":"Shutting down server","timestamp":"2024-09-30T02:16:56.018Z"}
+{"level":"info","message":"Server running on port 3000","timestamp":"2024-09-30T02:38:36.937Z"}
+{"level":"info","message":"CORS origin set to: http://10.3.60.252:3001","timestamp":"2024-09-30T02:38:36.938Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:40:08.076Z"}
+{"level":"info","message":"Fetching poll with id: 059c48f5-cebe-4bea-9191-a5581f9d6267","timestamp":"2024-09-30T02:40:11.036Z"}
+{"level":"info","message":"Fetching polls for user 39cff00e-80ee-4306-a552-be3a9c266ada","timestamp":"2024-09-30T02:40:13.355Z"}
+{"level":"info","message":"Shutting down server","timestamp":"2024-09-30T03:01:10.834Z"}
